@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#f1f5f9"/>
+  <rect width="800" height="500" fill="url(#pattern)" />
+  <text x="400" y="250" font-family="-apple-system, system-ui, sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle" dominant-baseline="middle">Knowledge-hud Image Placeholder</text>
+  <defs>
+    <pattern id="pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0 40 L 40 0" stroke="#e2e8f0" stroke-width="1"/>
+    </pattern>
+  </defs>
+</svg>

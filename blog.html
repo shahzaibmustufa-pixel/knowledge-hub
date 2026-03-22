@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Knowledge-hud</title>
+    <meta name="description" content="Browse through our collection of premium articles on technology, lifestyle, business, and more.">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Knowledge<span>-hud</span></a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode" style="width: auto; padding: 0 1rem; border-radius: 9999px;">
+                    <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <!-- Icon swapped via JS -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                    <span id="theme-text" style="margin-left: 0.5rem; font-weight: 500; font-size: 0.9rem;">Dark Mode</span>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section-padding" style="padding-top: 120px; text-align: center; background: var(--bg-secondary);">
+        <div class="container">
+            <h1>Our Latest <span class="text-gradient">Articles</span></h1>
+            <p style="max-width: 600px; margin: 1rem auto 0;">Explore our collection of articles carefully written to provide insight, knowledge, and actionable strategies.</p>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <section class="section-padding container">
+        
+        <!-- Search Filter -->
+        <div class="search-container">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" id="blog-search" class="search-input" placeholder="Search articles by title, category, or keyword...">
+        </div>
+
+        <div id="no-results" style="display: none; text-align: center; padding: 3rem 0; color: var(--text-tertiary);">
+            <h3>No articles found</h3>
+            <p>Please try adjusting your search terms.</p>
+        </div>
+
+        <div class="blog-grid" id="blog-list">
+            
+            <!-- Article 1 -->
+            <article class="blog-card">
+                <img src="images/placeholder.svg" alt="Article Image" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-category">Technology</span>
+                    <h3 class="blog-title">The Future of AI in Daily Life</h3>
+                    <p class="blog-excerpt">How artificial intelligence is quietly revolutionizing how we work, communicate, and live our everyday lives.</p>
+                    <div class="blog-meta">
+                        <span>By Sarah Jenkins</span>
+                        <span>Mar 18, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="blog-card">
+                <img src="images/placeholder.svg" alt="Article Image" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-category">Business</span>
+                    <h3 class="blog-title">Mastering the Remote Workspace</h3>
+                    <p class="blog-excerpt">Essential strategies for maintaining peak productivity and mental health while working from home full-time.</p>
+                    <div class="blog-meta">
+                        <span>By David Chen</span>
+                        <span>Mar 15, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="blog-card">
+                <img src="images/placeholder.svg" alt="Article Image" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-category">Lifestyle</span>
+                    <h3 class="blog-title">The Art of Mindful Living</h3>
+                    <p class="blog-excerpt">Actionable tips for incorporating genuine mindfulness practices into your busy modern schedule without disrupting workflow.</p>
+                    <div class="blog-meta">
+                        <span>By Elena Rossi</span>
+                        <span>Mar 12, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="blog-card">
+                <img src="images/placeholder.svg" alt="Article Image" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-category">Design</span>
+                    <h3 class="blog-title">UI Trends to Watch in 2026</h3>
+                    <p class="blog-excerpt">From glassmorphism to bento grids: a comprehensive look at the visual trends dominating user interfaces this year.</p>
+                    <div class="blog-meta">
+                        <span>By Marcus Doe</span>
+                        <span>Mar 08, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="blog-card">
+                <img src="images/placeholder.svg" alt="Article Image" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-category">Technology</span>
+                    <h3 class="blog-title">Understanding Web3 Fundamentals</h3>
+                    <p class="blog-excerpt">A beginner-friendly guide to block-chain networks, decentralized applications, and the future of the internet.</p>
+                    <div class="blog-meta">
+                        <span>By Alice Williams</span>
+                        <span>Mar 05, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="blog-card">
+                <img src="images/placeholder.svg" alt="Article Image" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-category">Business</span>
+                    <h3 class="blog-title">Building a Resilient Startup</h3>
+                    <p class="blog-excerpt">Key business strategies to keep your company agile and prepared for unpredictable economic shifts.</p>
+                    <div class="blog-meta">
+                        <span>By Jordan Lee</span>
+                        <span>Feb 28, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 7 -->
+            <article class="blog-card">
+                <img src="images/placeholder.svg" alt="Article Image" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-category">Lifestyle</span>
+                    <h3 class="blog-title">Optimizing Your Sleep Schedule</h3>
+                    <p class="blog-excerpt">Science-backed routines and habits that guarantee better rest and higher daily energy levels.</p>
+                    <div class="blog-meta">
+                        <span>By Rachel Green</span>
+                        <span>Feb 22, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 8 -->
+            <article class="blog-card">
+                <img src="images/placeholder.svg" alt="Article Image" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-category">Technology</span>
+                    <h3 class="blog-title">Data Privacy in the Modern Age</h3>
+                    <p class="blog-excerpt">Protecting your personal information online when applications and platforms constantly track activity.</p>
+                    <div class="blog-meta">
+                        <span>By Tech Analyst</span>
+                        <span>Feb 18, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 9 -->
+            <article class="blog-card">
+                <img src="images/placeholder.svg" alt="Article Image" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-category">Design</span>
+                    <h3 class="blog-title">The Psychology of Colors</h3>
+                    <p class="blog-excerpt">How color choices in branding and web design influence user behavior and brand perception fundamentally.</p>
+                    <div class="blog-meta">
+                        <span>By Sam Wright</span>
+                        <span>Feb 10, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 10 -->
+            <article class="blog-card">
+                <img src="images/placeholder.svg" alt="Article Image" class="blog-image">
+                <div class="blog-content">
+                    <span class="blog-category">Business</span>
+                    <h3 class="blog-title">Scaling Your Team Effectively</h3>
+                    <p class="blog-excerpt">Knowing when and how to hire the right personnel to elevate your company to the next level.</p>
+                    <div class="blog-meta">
+                        <span>By CEO Monthly</span>
+                        <span>Feb 05, 2026</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="grid-column: span 1 / auto;">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: block;">Knowledge<span>-hud</span></a>
+                    <p>Your premier destination for high-quality articles, insightful guides, and stories that matter.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Knowledge-hud. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
